@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Table(name="student_info")
 public class StudentInfo {
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
     @Any(
          metaDef = "StudentMetaDef",
